@@ -12,6 +12,7 @@ export class Comp2Component implements OnInit{
   ngOnInit(): void {
     this.dataService.dataEmitter.subscribe((data)=>{
       this.entereText=data;
+      console.log(this.entereText);
     })
   }
 }
